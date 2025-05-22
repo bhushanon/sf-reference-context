@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowTest xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flowApiName>Set_Custom_Opportunity_Name</flowApiName>
+    <label>Test Setting Custom Opportunity Name</label>
+    <testPoints>
+        <elementApiName>Start</elementApiName>
+        <parameters>
+            <leftValueReference>$Record</leftValueReference>
+            <type>InputTriggeringRecordInitial</type>
+            <value>
+                <sobjectValue>{&quot;AnnualRevenue&quot;:900750000,&quot;City&quot;:&quot;Tallahassee&quot;,&quot;CleanStatus&quot;:&quot;Pending&quot;,&quot;Company&quot;:&quot;Farmers Coop. of Florida&quot;,&quot;Country&quot;:&quot;United States&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;Email&quot;:&quot;bertha@fcof.net&quot;,&quot;Fax&quot;:&quot;(850) 644-4300&quot;,&quot;FirstName&quot;:&quot;Bertha&quot;,&quot;Industry&quot;:&quot;Agriculture&quot;,&quot;Interest_Details__c&quot;:&quot;All&quot;,&quot;IsUnreadByOwner&quot;:false,&quot;LastName&quot;:&quot;Boxer&quot;,&quot;LeadSource&quot;:&quot;Web&quot;,&quot;Lead_Score__c&quot;:10,&quot;NumberofLocations__c&quot;:130,&quot;OwnerId&quot;:&quot;005gK000000UknvQAC&quot;,&quot;Phone&quot;:&quot;(850) 644-4200&quot;,&quot;PostalCode&quot;:&quot;32306&quot;,&quot;Primary__c&quot;:&quot;Yes&quot;,&quot;Rating&quot;:&quot;Hot&quot;,&quot;RecordTypeId&quot;:&quot;012gK000000cb0BQAQ&quot;,&quot;SICCode__c&quot;:&quot;2768&quot;,&quot;Salutation&quot;:&quot;Ms.&quot;,&quot;State&quot;:&quot;Florida&quot;,&quot;StateCode&quot;:&quot;FL&quot;,&quot;Status&quot;:&quot;Closed - Converted&quot;,&quot;Street&quot;:&quot;321 Westcott Building&quot;,&quot;Title&quot;:&quot;Director of Vendor Relations&quot;}</sobjectValue>
+            </value>
+        </parameters>
+        <parameters>
+            <leftValueReference>$Record</leftValueReference>
+            <type>InputTriggeringRecordUpdated</type>
+            <value>
+                <sobjectValue>{&quot;AnnualRevenue&quot;:900750000,&quot;City&quot;:&quot;Tallahassee&quot;,&quot;CleanStatus&quot;:&quot;Pending&quot;,&quot;Company&quot;:&quot;Farmers Coop. of Florida&quot;,&quot;Country&quot;:&quot;United States&quot;,&quot;CountryCode&quot;:&quot;US&quot;,&quot;Email&quot;:&quot;bertha@fcof.net&quot;,&quot;Fax&quot;:&quot;(850) 644-4300&quot;,&quot;FirstName&quot;:&quot;Bertha&quot;,&quot;Industry&quot;:&quot;Agriculture&quot;,&quot;Interest_Details__c&quot;:&quot;All&quot;,&quot;IsUnreadByOwner&quot;:false,&quot;LastName&quot;:&quot;Boxer&quot;,&quot;LeadSource&quot;:&quot;Web&quot;,&quot;Lead_Score__c&quot;:10,&quot;NumberofLocations__c&quot;:130,&quot;OwnerId&quot;:&quot;005gK000000UknvQAC&quot;,&quot;Phone&quot;:&quot;(850) 644-4200&quot;,&quot;PostalCode&quot;:&quot;32306&quot;,&quot;Primary__c&quot;:&quot;Yes&quot;,&quot;Rating&quot;:&quot;Hot&quot;,&quot;RecordTypeId&quot;:&quot;012gK000000cb0BQAQ&quot;,&quot;SICCode__c&quot;:&quot;2768&quot;,&quot;Salutation&quot;:&quot;Ms.&quot;,&quot;State&quot;:&quot;Florida&quot;,&quot;StateCode&quot;:&quot;FL&quot;,&quot;Status&quot;:&quot;Closed - Converted&quot;,&quot;Street&quot;:&quot;321 Westcott Building&quot;,&quot;Title&quot;:&quot;Director of Vendor Relations&quot;}</sobjectValue>
+            </value>
+        </parameters>
+    </testPoints>
+    <testPoints>
+        <assertions>
+            <conditions>
+                <leftValueReference>Generate_New_Opportunity_Name</leftValueReference>
+                <operator>WasVisited</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+        </assertions>
+        <elementApiName>Finish</elementApiName>
+    </testPoints>
+</FlowTest>

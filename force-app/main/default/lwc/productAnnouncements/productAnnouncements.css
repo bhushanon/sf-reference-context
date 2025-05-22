@@ -1,0 +1,18 @@
+.announcement-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.announcement-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.announcement-item lightning-icon {
+    margin-right: 10px;
+}

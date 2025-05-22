@@ -1,0 +1,15 @@
+<template>
+    <div class="announcement-container">
+        <template if:true={announcements}>
+            <template for:each={announcements} for:item="announcement">
+                <div key={announcement.Id} class="announcement-item">
+                    <lightning-icon icon-name={announcement.icon} alternative-text={announcement.type}></lightning-icon>
+                    <p>{announcement.description}</p>
+                </div>
+            </template>
+        </template>
+        <template if:false={announcements}>
+            <p>No announcements available.</p>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsTranferMoveOrTransferCancel__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>(TEXT( Type__c ) == &apos;TRANSFER_MOVE&apos;) || (TEXT( Type__c ) == &apos;TRANSFER_CANCEL&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Tranfer Move Or Transfer Cancel</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

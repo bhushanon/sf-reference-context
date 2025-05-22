@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Main_Order_Item_Summary__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Main Order Item Summary</label>
+    <referenceTo>OrderItemSummary</referenceTo>
+    <relationshipLabel>OCI Interaction Order Item Summaries (Main Order Item Summary)</relationshipLabel>
+    <relationshipName>OCI_Interaction_Order_Item_Summaries</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

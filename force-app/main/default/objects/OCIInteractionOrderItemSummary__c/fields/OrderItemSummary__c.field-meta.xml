@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderItemSummary__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Order Product Summary</label>
+    <referenceTo>OrderItemSummary</referenceTo>
+    <relationshipLabel>OCI Interaction Order Item Summaries</relationshipLabel>
+    <relationshipName>OCIInteractionOrderItemSummaries</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

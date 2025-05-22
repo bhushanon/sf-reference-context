@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TRANSFER_MOVE</fullName>
+                <default>false</default>
+                <label>TRANSFER_MOVE</label>
+            </value>
+            <value>
+                <fullName>TRANSFER_CANCEL</fullName>
+                <default>false</default>
+                <label>TRANSFER_CANCEL</label>
+            </value>
+            <value>
+                <fullName>FULFILLMENT</fullName>
+                <default>true</default>
+                <label>FULFILLMENT</label>
+            </value>
+            <value>
+                <fullName>TRANSFER_RELEASE</fullName>
+                <default>false</default>
+                <label>TRANSFER_RELEASE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
